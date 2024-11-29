@@ -7,119 +7,363 @@
 	<link rel="stylesheet" href="css/style.min.css">
 	<script src="js/main.min.js" defer></script>
 </head>
+
+
 <body>
-	<header>header</header>
 
 <div class="wrapper">
-	<main class="main"> <h1>main123MAIN</h1>
 
+	<header class="bg--header-bg header">
 		<div class="container">
-			<div class="row">
 
-				<div class="col-md-3 mb-5 test">
-					<a href="#">
-						<svg class="tesla">
-							<use xlink:href="images/sprite.svg#tesla-9"></use>
-						</svg>
-					</a>
-				</div>
-				<div class="col-md-3 mb-3 test">
-					<svg class="sony">
-						<use xlink:href="images/sprite.svg#sony-logo-1"></use>
+			<div class="header__top">
+				<a class="header__logo" href="#" aria-label="Главная страница">
+					<svg class="header__logo-svg" aria-hidden="true">
+						<use xlink:href="images/sprite.svg#logo"></use>
 					</svg>
+				</a>
+				<button class="header__btn">buy</button>
+				<a class="header__phone" href="tel:+17777777">+1 777 77 77</a>
+			</div>
+
+			<div class="header__content">
+				<div class="header__content-box">
+					<h1 class="header__title">RAY AIR POCKET</h1>
+					<p class="header__text">INFLATABLE SUP BOARD</p>
+					<p class="header__text">SIZES: 11'6"X31"</p>
 				</div>
-
-			</div>
-		</div>
-
-		<div class="button">-</div>
-		<div class="gallery">
-			<div class="big">
-				<img src="images/aries.jpeg" alt="aries" loading="lazy">
-			</div>
-			<div class="small">
-				<a href="images/aries.jpeg"><img src="images/thumbs/aries.jpeg" alt="aries" loading="lazy"></a>
-				<a href="images/coral.jpeg"><img src="images/thumbs/coral.jpeg" alt="coral" loading="lazy"></a>
-				<a href="images/samuray.jpeg"><img src="images/thumbs/samuray.jpeg" alt="samuray" loading="lazy"></a>
-				<a href="images/oktan.jpeg"><img src="images/thumbs/oktan.jpeg" alt="oktan" loading="lazy"></a>
-			</div>
-		</div>
-
-		<div class="wrapp">
-			<picture class="img oktan">
-				<source srcset="images/oktan.avif" type="image/avif">
-				<source srcset="images/oktan.webp" type="image/webp">
-				<img src="images/oktan.jpeg" alt="oktan" loading="lazy">
-			</picture>
-			<button class="okt">Oktan</button>
-		</div>
-
-		<div class="wrapp">
-			<picture class="img samuray">
-				<source srcset="images/samuray.avif" type="image/avif">
-				<source srcset="images/samuray.webp" type="image/webp">
-				<img src="images/samuray.jpeg" alt="samuray" loading="lazy">
-			</picture>
-			
-
-			<div class="butt">
-				<button class="sam">Camuray</button>
-				<button class="cor">Coral</button>
+				<p class="header__decor-text header__decor-text--1">DOM</p>
+				<p class="header__decor-text header__decor-text--2">FREE</p>
+				<p class="header__decor-text header__decor-text--3">PACK SMALL FOR BIG ADVENTURES</p>
 			</div>
 
-			<picture class="img coral">
-				<source srcset="images/coral.avif" type="image/avif">
-				<source srcset="images/coral.webp" type="image/webp">
-				<img src="images/coral.jpeg" alt="samuray" loading="lazy">
-			</picture>
 		</div>
 
-		<ul class="menu">
-			<li>O компании</li>
-			<li>
-				Каталог
-				<ul>
-					<li>Седан</li>
-					<li>Хэтчбек</li>
-					<li>Универсал</li>
-					<li>Купе</li>
-				</ul>
-			</li>
-			<li>Услуги <span></span></li>
-			<li class="dot">Фотогалерея</li>
-			<li>Контакты</li>
-		</ul>
+	</header>
 
-		<div class="article">
-			<h1>Страны</h1>
-			<h2>StarShip</h2>
-			<p>Рассмотрим страны в алфавитном порядке</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione amet neque sapiente eos eligendi ea omnis totam ut, rerum praesentium voluptatum sit, blanditiis ullam impedit nemo aperiam sequi commodi non fugit sunt harum. Eligendi, commodi sit quam suscipit accusamus, enim architecto ipsam fugiat, quibusdam facere dolore corporis. Sit, incidunt.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione amet neque sapiente eos eligendi ea omnis totam ut, rerum praesentium voluptatum sit, blanditiis ullam impedit nemo aperiam sequi commodi non fugit sunt harum. Eligendi, commodi sit quam suscipit accusamus, enim architecto ipsam fugiat, quibusdam facere dolore corporis. Sit, incidunt.</p>
-		</div>
+	<main class="main">
+		<div class="info__decor"></div>
+		<section class="bg--info-bg info">
 
-		<div class="article-2">
-			<h1>Neuralink</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci necessitatibus distinctio repellendus nihil? Mollitia quae placeat accusantium, cumque hic autem minima nemo atque reiciendis saepe ratione, alias assumenda, doloremque unde.</p>
-		</div>
+			<div class="container">
+				<div class="info__inner">
+					
+					<div class="info__top">
+						<p class="info__top-text info__top-text--one">
+							After our well received Fly Air Pocket Edition we’re adding the respective touring iSUP to our Range – the Ray Air Pocket Edition! The ultra travel-friendly touring iSUP is built in a tough but light construction that allows it to be packed into a backpack half the size of a regular iSUP.
 
-		<div class="surf">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide slide1">text1</div>
-				<div class="swiper-slide slide2">text2</div>
-				<div class="swiper-slide slide3">text3</div>
-				<div class="swiper-slide slide4">text4</div>
-				<div class="swiper-slide slide5">text5</div>
+							
+							<button class="info__btn popup__btn">
+								<svg class="popup__img" width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.673 34.5l-26.51 15.155v-30.31L52.673 34.5z"/><circle cx="35" cy="35" r="34" stroke-width="2"/></svg>
+								<span>Play video</span>
+							</button>
+						</p>
+						<p class="info__top-text info__top-text--two">
+							With a thinner deck pad and tough but flexible construction, the Ray Air Pocket Edition can be rolled and packed into a much narrower bag, making it extremely easy to store and transport. Based on our highly versatile Ray Air 11’6’’, the efficient shape is packed with volume - offering safe, stable paddling and superb glide – which makes it the perfect iSUP for everyone paddling some distance. With its minimal weight and dimensions nothing comes close the convenient handling of our Pocket Edition iSUPs!
+						</p>
+						<picture>
+							<source srcset="images/sup.avif" type="image/avif">
+							<source srcset="images/sup.webp" type="image/webp">
+							<img class="info__top-img" src="images/sup.jpg" alt="sup" loading="lazy">
+						</picture>
+					</div>
+
+					<div class="info__specs">
+						<h3 class="info__specs-title">SPECS</h3>
+						<ul class="info__specs-list">
+							<li class="info__specs-item">
+								<p class="info__specs-caption">BOARD</p>
+								<p class="info__specs-text">RAY AIR POCKET 11'6"X31"</p>
+							</li>
+							<li class="info__specs-item">
+								<p class="info__specs-caption">VOLUME</p>
+								<p class="info__specs-text">299 L</p>
+							</li>
+							<li class="info__specs-item">
+								<p class="info__specs-caption">WIDTH</p>
+								<p class="info__specs-text">31" / 78.7 CM</p>
+							</li>
+							<li class="info__specs-item">
+								<p class="info__specs-caption">LENGTH</p>
+								<p class="info__specs-text">11'6'' / 350.5 CM</p>
+							</li>
+							<li class="info__specs-item">
+								<p class="info__specs-caption">THICKNESS</p>
+								<p class="info__specs-text">6” / 15 CM</p>
+							</li>
+							<li class="info__specs-item">
+								<p class="info__specs-caption">WEIGHT</p>
+								<p class="info__specs-text">8.5 KG</p>
+							</li>
+							<li class="info__specs-item">
+								<p class="info__specs-caption">FITTINGS</p>
+								<p class="info__specs-text">2X FCS FIN SYSTEM / 2 X 4.5" CLICK FIN</p>
+							</li>
+							<li class="info__specs-item">
+								<p class="info__specs-caption">REC. USER WEIGHT</p>
+								<p class="info__specs-text">UP TO 100 KG</p>
+							</li>
+							<li class="info__specs-item">
+								<p class="info__specs-caption">MASTFOOT INSERT</p>
+								<p class="info__specs-text">NO</p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
 			</div>
-			<div class="swiper-pagination"></div>
-		</div>
-		<div  class="bg--samuray test-bg">sdf   </div>
-		
+		</section>
+
+		<section class="buy">
+			<div class="container">
+				<div class="buy__inner">
+					<div class="buy__content">
+						<h3 class="buy__title">RAY AIR POCKET</h3>
+						<ul class="buy__list">
+							<li class="buy__item">
+								<p class="buy__item-title">CLICK FINS</p>
+								<p class="buy__item-text">Comes with two 4.5’’ Click Fins – no tools required – fit and remove in seconds</p>
+							</li>
+							<li class="buy__item">
+								<p class="buy__item-title">REDUCED DECK PAD</p>
+								<p class="buy__item-text">Reduced area deck pad in standing area to aid packing</p>
+							</li>
+							<li class="buy__item">
+								<p class="buy__item-title">BACKPACK</p>
+								<p class="buy__item-text">Compact Pocket backpack with easy entry zipper for board, paddle, pump and accessories (fits paddle and also regular pump)</p>
+							</li>
+							<li class="buy__item">
+								<p class="buy__item-title">TOURING SHAPE</p>
+								<p class="buy__item-text">Tried and tested shape based on our popular Ray Air 11’6’’</p>
+							</li>
+							<li class="buy__item">
+								<p class="buy__item-title">EXTREMELY PORTABLE</p>
+								<p class="buy__item-text">Extremely portable, the ultimate travel companion</p>
+							</li>
+							<div class="buy__price">
+								<svg class="buy__price-icon" aria-hidden="true">
+									<use xlink:href="images/sprite.svg#buy-price-icon"></use>
+								</svg>
+								<div class="buy__price-span">590 €</div>
+							</div>
+						</ul>
+						<button class="buy__btn">buy</button>
+
+					</div>
+					<picture class="buy__picture">
+						<source srcset="images/buy-full.avif" type="image/avif">
+						<source srcset="images/buy-full.webp" type="image/webp">
+						<img class="buy__img" src="images/buy-full.jpg" alt="buy-full" loading="lazy">
+					</picture>
+				</div>
+			</div>
+		</section>
+
+		<section class="technology">
+			<div class="technology__decor"></div>
+			<div class="bg--technology-bg technology__top">
+				<div class="container technology__top-inner">
+
+					<button class="technology__top-btn popup__btn">
+						<svg class="popup__img" width="70" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.673 34.5l-26.51 15.155v-30.31L52.673 34.5z"/><circle cx="35" cy="35" r="34" stroke-width="2"/></svg>
+						<span>Play video</span>
+					</button>
+					<div class="technology__top-box">
+						<h3 class="technology__title">MICRO TECHNOLOGY</h3>
+						<ol class="technology__list">
+							<li class="technology__list-item"><span class="technology__list-text">First PVC rail layer</span></li>
+							<li class="technology__list-item"><span class="technology__list-text">Second PVC rail layer</span> </li>
+							<li class="technology__list-item"><span class="technology__list-text">Thin diamond grooving split-pad</span></li>
+							<li class="technology__list-item"><span class="technology__list-text">Strong Tarpaulin layer</span></li>
+							<li class="technology__list-item"><span class="technology__list-text">V-Drop Stitch core</span></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="container">
+					<div class="gallery__inner">
+						<div class="gallery__box">
+							<p class="gallery__text">Our new Micro technology provides a featherweight and quality construction that can be rolled and packed into a backpack half the width of a standard iSUP package. The reduced pad and our twin Click Fin system make it possible to have a regular sized iSUP packed into minimal space.</p>
+							<div class="gallery-min">
+								<picture class="gallery-min__first-el">
+									<source srcset="images/gmin-1.avif" type="image/avif">
+									<source srcset="images/gmin-1.webp" type="image/webp">
+									<img class="gallery-min__img gallery-min__img--1" src="images/gmin-1.jpg" alt="gmin-1" loading="lazy">
+								</picture>
+								<picture>
+									<source srcset="images/gmin-2.avif" type="image/avif">
+									<source srcset="images/gmin-2.webp" type="image/webp">
+									<img class="gallery-min__img gallery-min__img--2" src="images/gmin-2.jpg" alt="gmin-2" loading="lazy">
+								</picture>
+								<picture>
+									<source srcset="images/gmin-3.avif" type="image/avif">
+									<source srcset="images/gmin-3.webp" type="image/webp">
+									<img class="gallery-min__img gallery-min__img--3" src="images/gmin-3.jpg" alt="gmin-3" loading="lazy">
+								</picture>
+							</div>
+						</div>
+						<div class="gallery-max">
+							<picture class="gallery-max__pic--1">
+								<source srcset="images/gmax-1.avif" type="image/avif">
+								<source srcset="images/gmax-1.webp" type="image/webp">
+								<img class="gallery-max__img gallery-max__img--1" src="images/gmax-1.jpg" alt="gmax-1" loading="lazy">
+							</picture>
+							<picture class="gallery-max__pic--2">
+								<source srcset="images/gmax-2.avif" type="image/avif">
+								<source srcset="images/gmax-2.webp" type="image/webp">
+								<img class="gallery-max__img gallery-max__img--2" src="images/gmax-2.jpg" alt="gmax-2" loading="lazy">
+							</picture>
+							<picture class="gallery-max__pic--3">
+								<source srcset="images/gmax-3.avif" type="image/avif">
+								<source srcset="images/gmax-3.webp" type="image/webp">
+								<img class="gallery-max__img gallery-max__img--3" src="images/gmax-3.jpg" alt="gmax-1" loading="lazy">
+							</picture>
+							<picture class="gallery-max__pic--4">
+								<source srcset="images/gmax-4.avif" type="image/avif">
+								<source srcset="images/gmax-4.webp" type="image/webp">
+								<img class="gallery-max__img gallery-max__img--4" src="images/gmax-4.jpg" alt="gmax-1" loading="lazy">
+							</picture>
+							<picture class="gallery-max__pic--5">
+								<source srcset="images/gmax-5.avif" type="image/avif">
+								<source srcset="images/gmax-5.webp" type="image/webp">
+								<img class="gallery-max__img gallery-max__img--5" src="images/gmax-5.jpg" alt="gmax-1" loading="lazy">
+							</picture>
+							<div class="gallery-max__box">
+								<p class="gallery-max__text">enjoy your life</p> 
+							</div>
+							<picture class="gallery-max__pic--6">
+								<source srcset="images/gmax-6.avif" type="image/avif">
+								<source srcset="images/gmax-6.webp" type="image/webp">
+								<img class="gallery-max__img gallery-max__img--6" src="images/gmax-6.jpg" alt="gmax-1" loading="lazy">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 
 
-  <footer class="footer">footer Scooter</footer>
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer__inner">
+
+        <div class="footer__top">
+
+          <form class="footer__form">
+
+            <h3 class="footer__title">contact us</h3>
+
+            <input class="footer__form-input" type="text" placeholder="name">
+
+            <input class="footer__form-input" type="email" placeholder="e-mail">
+
+            <button class="footer__form-btn" type="submit"><span>send</span></button>
+
+          </form>
+
+          <a class="footer__logo" href="#" aria-label="Главная страница">
+
+            <svg class="footer__logo-svg" aria-hidden="true">
+
+              <use xlink:href="images/sprite.svg#logo"></use>
+
+            </svg>
+
+          </a>
+
+        </div>
+
+        <p class="footer__social-title">instagram</p>
+
+        <div class="footer__gallery">
+
+          <picture>
+
+            <source srcset="images/fgallery-1.avif" type="image/avif">
+
+            <source srcset="images/fgallery-1.webp" type="image/webp">
+
+            <img class="footer__gallery-img" src="images/fgallery-1.jpg" alt="fgallery-1" loading="lazy">
+
+          </picture>
+
+          <picture>
+
+            <source srcset="images/fgallery-2.avif" type="image/avif">
+
+            <source srcset="images/fgallery-2.webp" type="image/webp">
+
+            <img class="footer__gallery-img" src="images/fgallery-2.jpg" alt="fgallery-2" loading="lazy">
+
+          </picture>
+
+          <picture>
+
+            <source srcset="images/fgallery-3.avif" type="image/avif">
+
+            <source srcset="images/fgallery-3.webp" type="image/webp">
+
+            <img class="footer__gallery-img" src="images/fgallery-3.jpg" alt="fgallery-3" loading="lazy">
+
+          </picture>
+
+          <picture>
+
+            <source srcset="images/fgallery-4.avif" type="image/avif">
+
+            <source srcset="images/fgallery-4.webp" type="image/webp">
+
+            <img class="footer__gallery-img" src="images/fgallery-4.jpg" alt="fgallery-4" loading="lazy">
+
+          </picture>
+
+        </div>
+
+        <ul class="footer__menu-list">
+
+          <li class="footer__menu-item">
+
+            <a class="footer__menu-link" href="#">COPYRIGHT 2022</a>
+
+          </li>
+
+          <li class="footer__menu-item">
+
+            <a class="footer__menu-link" href="#">ALL RIGHTS RESERVED</a>
+
+          </li>
+
+          <li class="footer__menu-item">
+
+            <a class="footer__menu-link" href="#">COOKIE SETTINGS</a>
+
+          </li>
+
+          <li class="footer__menu-item">
+
+            <a class="footer__menu-link" href="#">PRIVACY STATEMENTS</a>
+
+          </li>
+
+          <li class="footer__menu-item">
+
+            <a class="footer__menu-link" href="#">CONTACT</a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
 
 
 
@@ -129,25 +373,7 @@
 
 
 
-<div class="surf">
 
-  <div class="swiper-wrapper">
-
-    <div class="swiper-slide slide1">text1</div>
-
-    <div class="swiper-slide slide2">text2</div>
-
-    <div class="swiper-slide slide3">text3</div>
-
-    <div class="swiper-slide slide4">text4</div>
-
-    <div class="swiper-slide slide5">text5</div>
-
-  </div>
-
-  <div class="swiper-pagination"></div>
-
-</div>
 
 
 

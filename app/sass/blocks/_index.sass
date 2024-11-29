@@ -1,0 +1,448 @@
+.header
+	height: 100vh
+	font-family: comfortaa-s
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	position: relative
+	text-transform: uppercase
+	&::before, &::after
+		content: ''
+		position: absolute
+		background-image: url('../images/content/fir-trees1.png')
+		bottom: 0
+		left: 0
+		right: 0
+		height: 456px
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		transform: translateY(50%)
+		z-index: 2
+	&::after
+		transform: translateY(90%) rotate(180deg)
+		z-index: 3
+	&__top
+		display: flex
+		align-items: center
+		justify-content: end
+		margin: 57px 0
+		font-size: 20px
+		font-weight: 700
+	&__logo-svg
+		width: 158px
+		height: 35px
+		fill: $accent-dark
+		transition: fill .25s ease-out
+		&:hover
+			fill: $accent-blue
+	&__btn
+		margin: 0 102px
+		background-color: $accent-dark
+		color: #fff
+		text-transform: uppercase
+		padding: 9px 78px
+		transition: color .25s ease-out, background-color .25s ease-out
+		&:hover
+			color: $accent-dark
+			background-color: $accent-green
+	&__content
+		min-height: calc(100vh - 155px)
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		color: #fff
+		position: relative
+	&__content-box
+		width: 550px
+		text-align: center
+		margin-top: -100px
+		margin-right: 40px
+	&__title
+		font-size: 64px
+		margin-bottom: 20px
+	&__text
+		font-size: 24px
+		margin-bottom: 17px
+	&__decor-text
+		position: absolute
+		bottom: 0
+		font-family: comfortaa-s, sans-serif
+		font-size: 130px
+		color: $accent-blue
+		opacity: 0.3
+		&--1
+			bottom: 30px
+			z-index: 1
+		&--2
+			bottom: -105px
+			left: 265px
+			z-index: 5
+		&--3
+			font-family: inter-s, sans-serif
+			font-size: 32px
+			font-weight: 300
+			font-style: italic
+			opacity: 1
+			z-index: 5
+			text-align: center
+			bottom: -60px
+		&--1, &--3
+			max-width: 360px
+			margin-right: 145px
+
+.info__decor
+		height: 180px
+		background-color: $accent-dark
+
+//                                                               section info
+
+.info
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding-bottom: 70px
+	&__inner
+		padding-top: 100px
+		height: 100%
+		color: #fff
+	&__top
+		display: flex
+		gap: 85px
+		align-items: end
+	&__top-text
+		width: 290px
+		margin-top: 228px
+		max-height: 375px
+	&__top-text + &__top-text
+		display: block
+		padding-bottom: 30px
+		position: relative
+		&::after
+			content: ''
+			background-color: #fff
+			width: 100%
+			height: 1px
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+	&__btn
+		background-color: transparent
+		margin: 82px 0 0 auto
+	&__top-img
+		min-width: 227px
+		position: relative
+		z-index: 10
+
+.info__specs
+	display: flex
+	align-items: center
+	text-transform: uppercase
+	margin-top: 600px
+	&-title
+		@extend %title-font
+		margin-right: 175px
+	&-list
+		width: 565px
+		height: 378px
+		font-weight: 700
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 30px 0 !important
+		position: relative
+		&::after, &::before
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: #fff
+			position: absolute
+			left: 0
+			right: 0
+		&::before
+			top: 0
+		&::after
+			bottom: 0
+	&-caption, &-text
+		display: inline-block
+	&-caption
+		width: 178px
+		margin-right: 20px
+
+
+//                                                    section buy
+.buy
+	margin-top: 150px
+	&__title
+		letter-spacing: -2px
+		@extend %title-font
+		color: $accent-blue
+		margin-bottom: 42px
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__content
+		width: 485px
+	&__list
+		margin-bottom: 50px
+		position: relative
+	&__item
+		width: 285px
+		margin-bottom: 25px
+		position: relative
+		z-index: 2
+		&:hover
+			.buy__item-title
+				color: $accent-blue
+	&__item-title
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 8px
+		transition: color .25s ease-out
+	&__btn
+		width: 100%
+		height: 80px
+		background-color: #fff
+		font-family: comfortaa-s
+		font-size: 40px
+		font-weight: 700
+		border: 2px solid $accent-blue
+		text-transform: uppercase
+		color: $accent-blue
+		padding-top: 5px
+		transition: background-color .25s ease-out, border-color .25s ease-out, color .25s ease-out
+		&:hover
+			background-color: $accent-green
+			border-color: $accent-green
+			color: $accent-dark
+	&__img
+		min-width: 600px
+		height: 627px
+		// margin-left: auto
+	&__price
+		margin-left: 292px
+		width: 200px
+		height: 200px
+		position: absolute
+		bottom: 0
+		right: 0
+		transition: transform .25s ease-out
+		z-index: 5
+		&:hover
+			transform: scale(1.25)
+		&-span
+			position: absolute
+			bottom: 100px
+			right: 100px
+			transform: translate(50%, 50%)
+			font-size: 35px
+			font-weight: 700
+		&-icon
+			fill: $accent-green
+			height: 200px
+			width: 200px
+
+//                                                      section technology
+.technology
+	overflow: hidden
+	position: relative
+	&__decor
+		height: 175px
+		width: 100%
+		position: absolute
+		background-color: #fff
+		top: 0
+		left: 0
+		right: 0
+		z-index: 10
+		&::after
+			content: ''
+			height: 538px
+			width: 100%
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+			position: absolute
+			left: 0
+			right: 0
+			z-index: 5
+			background-image: url('../images/content/fir-trees-white.png')
+			top: -4rem
+
+	&__top
+		height: 1370px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		position: relative
+
+	&__top-inner
+		position: relative
+		height: 100%
+	&__top-btn
+		position: absolute
+		top: 653px
+		right: 356px
+	&__top-box
+		position: absolute
+		bottom: 0
+		left: 15px
+		margin-bottom: 85px
+	&__title
+		@extend %title-font
+		width: 422px
+		margin-bottom: 62px
+	&__list
+		font-size: 20px
+		font-weight: 700
+	&__list-item
+		margin-bottom: 15px
+		position: relative
+		left: 23px
+	&__list-text
+		margin-left: 15px
+
+.gallery
+	&__box
+		display: flex
+		align-items: center
+		gap: 68px
+		margin-top: -258px
+	&__text
+		line-height: 1.2
+		width: 350px
+		margin-top: 100px
+	&-min
+		display: grid
+		grid-template-columns: 481px 208px
+		grid-template-rows: 432px 300px
+		gap: 24px 30px
+		margin: 0 31px 52px
+		position: relative
+		&::before
+			content: ''
+			width: 782px
+			height: 881px
+			position: absolute
+			top: -72px
+			left: -31px
+			border: 3px solid $accent-dark
+			border-radius: 200px 0 300px 0
+	&-min__first-el
+		grid-column: 1 / 3
+	&-min__img--1
+		border-radius: 400px 0 0 0
+	&-min__img--2
+		border-radius: 0 0  0 300px
+		
+.gallery-max
+	margin: 150px 0
+	display: grid
+	gap: 20px
+	grid-template-columns: 300px 469px 391px
+	grid-template-rows: 340px 270px 270px
+	&__box
+		background-color: $accent-blue
+		border-radius: 0 0 0 200px
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #fff
+		font-weight: 800
+		font-size: 32px
+		text-transform: uppercase
+		position: relative
+	&__text
+		width: 200px
+		text-align: center
+		font-style: italic
+
+	&__pic--2
+		grid-column: 2 / 4
+		justify-self: end
+	&__pic--6
+		grid-column: 2 / -1
+	&__img--1
+		position: absolute
+	&__img--2
+		border-radius: 0 500px 0 0
+	&__img--3
+		border-radius: 0 0 150px 0
+	&__img--4
+		border-radius: 0 200px 0 0
+	&__img--5
+		border-radius: 200px 0 0 0
+	&__img--6
+		border-radius: 0 0 0 400px
+
+.footer
+	background-color: $accent-dark
+	&__top
+		margin-top: 102px
+		display: flex
+		align-items: start
+		justify-content: space-between
+	&__title
+		@extend %title-font
+		color: #fff
+		margin-bottom: 26px
+	&__logo-svg
+		width: 370px
+		height: 81px
+		fill: #fff
+		margin-top: -23px
+		transition: fill .25s ease-out
+		&:hover
+			fill: $accent-blue
+	&__form
+		display: flex
+		flex-direction: column
+		justify-content: start
+		width: 500px
+	&__form-input
+		margin-bottom: 50px
+		background-color: transparent
+		border: none
+		border-bottom: 1px solid rgba(#fff, .4)
+		padding: 10px 0
+		color: #fff
+		font-weight: 700
+		letter-spacing: 1px
+		&::placeholder
+			font-weight: 700
+			text-transform: uppercase
+			color: rgba(#fff, .2)
+			
+		&:focus, &:active
+			color: $accent-dark
+			background-color: #fff
+	&__form-btn
+		width: 193px
+		height: 43px
+		font-family: comfortaa-s
+		text-transform: uppercase
+		font-size: 20px
+		font-weight: 700
+		margin-bottom: 98px
+		span
+			display: block 
+			margin-top: 3px
+	&__social-title
+		color: #fff
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 28px
+	&__gallery
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		column-gap: 52px
+		margin-bottom: 48px
+	&__menu-list
+		color: #fff
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 83px
+		font-weight: 700

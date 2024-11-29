@@ -73,7 +73,9 @@ function sprite() {
 	if (fs.existsSync(spritePath)) {
 		fs.unlinkSync(spritePath);
 	}
-	return src(['app/images/**/*.svg', '!app/images/src/**/*.*'])
+	return src(['app/images/**/*.svg',
+							'!app/images/icons/*.svg',
+						  '!app/images/src/**/*.*'])
 		.pipe(svgSprite({
 			mode: {
 				stack: {
